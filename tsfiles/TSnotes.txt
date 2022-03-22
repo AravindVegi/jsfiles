@@ -1,0 +1,125 @@
+https://www.youtube.com/watch?v=8cm1x4bC610
+
+
+typescript -> js +types
+
+typescript -> superset of js 
+              contains some syntax features that can be put into js code, but all optional
+              JS continuously evolving, (let, arrow etc)
+		 TS does some conversion and give it for you, so that it becomes compatible with all browsers
+            makes build complex apps , more manageable
+            angular 2  is using ts 
+npm -? node package manager
+
+node js -> we need to convert/compile ts -> js
+
+1. have ide
+2. install node js
+downlooad node js
+a. node -v
+b. npm -v
+c. npm install typescript -g
+
+
+TO RUN:
+
+go  to commandp rompt/terminal, navigate to your location where ts file is created 
+give command tsc filename.ts -> to compile your code
+
+-----------------------------------------------------------------
+
+
+
+
+
+for an array declaration, specify data type before array[]
+for 	 tuple declaration, specify the datatype like elements inside []
+
+data type erasure is possible.
+error behaviour 
+-----------------------
+Js -> no. of argument don't have to match the function. u can pass lesser, greater -> no error
+TS -> both no. of arguments and type must match . 
+optional arguments: 
+------------------------
+implicit typing 
+
+if we don't explicitly declarate variable type, but you have  assigned  some value,
+then typescript implicitly assumes the type from the value being used. 
+same line implicit typing 
+diff line -> any data type 
+
+---------------------
+union types 
+-----------------
+class 
+class className{};
+we can create an object , we can restrict the data types. 
+
+--------------------------------------
+
+Polymorphism, inheritance
+this, super keyword
+----------------
+class extends another class
+class implements interface
+---------------------
+member visibility -> public , private, protected
+private -> create setter, getter 
+---------------
+export, import, modules
+
+generics
+------------------
+
+tsc filename.ts
+tsc filename.ts --out newfilename.js
+tsc filename.ts --out newfilename.js --watch
+------------------------------------------
+tsc --init  -> tsconfig.json
+target": "es2016 " -> version
+ "strict": true,  -> type checking
+"outDir": "./out", 
+"noEmit": true, 
+"noEmitOnError": true,   
+------------------------
+create a npmproject 
+npm init
+package.json
+
+name,description
+---------------
+"start" : "tsc && node out/index.js"
+npm start
+-----------------------------------------
+installing libraries, type definitions
+
+
+lodash -> utility libary -> has lot of collections & object related functions. juz like to manage 
+collecTIONS, ARRAYS, ETC
+
+npm install _________    --save
+npm install lodash --save
+
+------------
+
+npm install lodash -ts;
+npm install lodash -type-definition
+npm install @types/lodash --save -dev
+-------------------------------------------------
+we installed library and used that in node modules
+
+------------------------------set up[project -------------
+
+npm init ->       package.json
+tsc --init ->     tsconfig.json
+We created src folders, out folder
+in tsconfig -> outdir, root dire, 
+created a ts file 
+ give a command in pkg.json -> scripts->start   =>  tsc && node foldername/filename.js
+npm start
+
+
+npm start -> to start 
+
+-----------set up the project------------------
